@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" >
+    <title>Редактирование профиля</title>
+</head>
+<body>
+    <div class="container">
+        <p>Масленников Александр</p>
+        <h1>Профиль</h1>
+        <form enctype="multipart/form-data">
+            <label>Ваш пол:</label> <input type="radio" id="radioButton1" name="contact" value="Мужской" checked> <label for="radioButton1"> Мужской</label> <input type="radio" id="radioButton2" name="contact" value="Женский"> <label for="radioButton2">Женский</label></label><br>
+            <lable>Месяц и год рождения:<br>
+                <select name="month" id="">
+                    <option value="january">январь</option>
+                    <option value="february">февраль</option>
+                    <option value="march">март</option>
+                    <option value="april">апрель</option>
+                    <option value="may">май</option>
+                    <option value="june">июнь</option>
+                    <option value="july">июль</option>
+                    <option value="august">август</option>
+                    <option value="september">сентябрь</option>
+                    <option value="october">октябрь</option>
+                    <option value="november">ноябрь</option>
+                    <option value="december">декабрь</option>
+                </select>
+                <select name="year" id="">
+                    
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                </select>
+            </lable><br>
+            <lable>Знакомые технологии:</lable><br>
+            <select name="Familiar technologies[]" multiple size="4">
+                <option value="HTML">html</option>
+                <option value="css" selected>css</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Node.js" selected>Node.js</option>
+            </select><br>
+            <label>Фото:<input type="file" name="file"></label><br>
+            <input type="button" value="Сохранить"><br>
+            <input type="hidden" value="ssss">
+        </form>
+    </div>
+</body>
+</html>
